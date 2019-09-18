@@ -11,3 +11,4 @@ node_modules/
 
 #WEBSTORM STUFF
 idea/*
+.idea/workspace.xml
