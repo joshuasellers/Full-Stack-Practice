@@ -8,3 +8,6 @@ bundle.js
 
 #DEPENDENCY DIRECTORIES
 node_modules/
+
+#WEBSTORM STUFF
+idea/*
