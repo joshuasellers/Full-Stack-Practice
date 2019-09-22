@@ -18,3 +18,5 @@ package-lock.json
 .idea/misc.xml
 .idea/workspace.xml
 .DS_Store
+.idea/misc.xml
+*.xml
