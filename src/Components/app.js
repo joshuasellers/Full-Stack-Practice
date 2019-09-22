@@ -11,7 +11,6 @@ class App extends Component {
             <div>
                 <NavBar />
                 <HomePage />
-                <a href="https://reactstrap.github.io/components/navbar/">reactstrap Navbar example</a>
                 <Footer />
             </div>
         );

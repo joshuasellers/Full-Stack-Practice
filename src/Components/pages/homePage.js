@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import Title from './title'
+import './homePage.css'
 
 class HomePage extends Component {
     render() {
         return (
-            <div>
-                Home page
+            <div className="name">
+               <Title/>
             </div>
         )
     }
