@@ -1,11 +1,12 @@
 {
-  "name": "Job-Search-Project",
+  "name": "job-search-project",
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "react": "16.4.1",
-    "react-dom": "16.4.1",
-    "reactstrap": "6.3.0"
+    "bootstrap": "^4.3.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "reactstrap": "^6.3.0"
   },
   "scripts": {
     "start": "react-scripts start",

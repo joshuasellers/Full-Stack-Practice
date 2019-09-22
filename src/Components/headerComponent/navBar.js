@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
 import {
     Collapse,
     Navbar,
@@ -7,42 +8,25 @@ import {
     Nav,
     NavItem,
     NavLink,
-} from 'reactstrap/src';
+    UncontrolledDropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem } from 'reactstrap';
 
-const links = [
-    { href: '#home', text: 'Home' },
-    { href: '#card', text: 'Product' },
-    { href: '#about', text: 'About' },
-    { href: '#cata', text: 'Categories' },
-    { href: '#test', text: 'Blogs' },
-    { href: '#test2', text: 'News' },
-    { href: '#busns', text: 'Adds', className: 'btnadd' },
-    { href: '/login', text: 'LOGIN' },
-];
-
-const createNavItem = ({ href, text, className }) => (
-    <NavItem>
-        <NavLink href={href} className={className}>{text}</NavLink>
-    </NavItem>
-);
-
-export default class Example extends Component {
+export default class Example extends React.Component {
     constructor(props) {
         super(props);
 
+        this.toggle = this.toggle.bind(this);
         this.state = {
             isOpen: false
         };
-
-        this.toggle = this.toggle.bind(this);
     }
-
     toggle() {
         this.setState({
             isOpen: !this.state.isOpen
         });
     }
-
     render() {
         return (
             <div>
@@ -51,7 +35,29 @@ export default class Example extends Component {
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
-                            {links.map(createNavItem)}
+                            <NavItem>
+                                <NavLink href="/components/">Components</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                            </NavItem>
+                            <UncontrolledDropdown nav inNavbar>
+                                <DropdownToggle nav caret>
+                                    Options
+                                </DropdownToggle>
+                                <DropdownMenu right>
+                                    <DropdownItem>
+                                        Option 1
+                                    </DropdownItem>
+                                    <DropdownItem>
+                                        Option 2
+                                    </DropdownItem>
+                                    <DropdownItem divider />
+                                    <DropdownItem>
+                                        Reset
+                                    </DropdownItem>
+                                </DropdownMenu>
+                            </UncontrolledDropdown>
                         </Nav>
                     </Collapse>
                 </Navbar>
