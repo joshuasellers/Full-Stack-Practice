@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c7ae9fc-5b67-488a-9481-2b35de2204eb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/public/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/footerComponent/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/footerComponent/footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/footerComponent/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/footerComponent/footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/headerComponent/navStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/headerComponent/navStyle.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -51,10 +48,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Components/headerComponent/navStyle.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
+            <state relative-caret-position="279">
               <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
             </state>
           </provider>
@@ -74,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Components/footerComponent/footer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="70" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
+            <state relative-caret-position="225">
+              <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -137,8 +134,8 @@
         <option value="$PROJECT_DIR$/src/Components/pages/homePage.css" />
         <option value="$PROJECT_DIR$/src/Components/footerComponent/footer.css" />
         <option value="$PROJECT_DIR$/public/styles.css" />
-        <option value="$PROJECT_DIR$/src/Components/headerComponent/navStyle.css" />
         <option value="$PROJECT_DIR$/src/Components/footerComponent/footer.js" />
+        <option value="$PROJECT_DIR$/src/Components/headerComponent/navStyle.css" />
       </list>
     </option>
   </component>
@@ -244,12 +241,12 @@
       <workItem from="1568160992377" duration="2624000" />
       <workItem from="1568768163126" duration="5946000" />
       <workItem from="1569110469578" duration="4564000" />
-      <workItem from="1569180353206" duration="4830000" />
+      <workItem from="1569180353206" duration="4955000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17964000" />
+    <option name="totallyTimeSpent" value="18089000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -402,13 +399,6 @@
     <entry file="file://$PROJECT_DIR$/public/styles.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/headerComponent/navStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/footerComponent/footer.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -418,11 +408,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/footerComponent/footer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="70" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
+        <state relative-caret-position="225">
+          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/headerComponent/navStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
         </state>
       </provider>
     </entry>
