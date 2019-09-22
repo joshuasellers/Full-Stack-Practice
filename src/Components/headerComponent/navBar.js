@@ -7,7 +7,7 @@ import {
     Nav,
     NavItem,
     NavLink,
-} from 'reactstrap';
+} from 'reactstrap/src';
 
 const links = [
     { href: '#home', text: 'Home' },
