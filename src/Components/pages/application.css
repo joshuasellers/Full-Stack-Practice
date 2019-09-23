@@ -1,6 +1,7 @@
 .tg {
     border-collapse:collapse;
     border-spacing:0;
+    padding-bottom: 10px;
 }
 
 .tg td{
@@ -17,7 +18,7 @@
     font-family:Arial, sans-serif;
     font-size:14px;
     font-weight:normal;
-    padding:10px 20px;
+    padding:0px 0px;
     border-style:solid;
     border-width:1px;
     overflow:hidden;
@@ -42,3 +43,36 @@
     text-align:left;
     vertical-align:top
 }
+
+.button-app{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #C4C4C4;
+    border: 1px;
+    font-size: 14px;
+    width: 15%;
+    font-weight: bold;
+    font-family: "Open Sans";
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    margin-bottom: 6%;
+}
+
+.app-page{
+    margin-top: 200px;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translateY(-50%);
+}
+
+.item{
+    padding: 100px;
+}
+
