@@ -5,20 +5,28 @@ class Application extends Component {
     render() {
         return (
             <div className={"app-page"}>
+                <h2>New Job Application</h2>
+                <p>Add in the information related to your most recent job application</p>
                 <span className={"item"}>
-                    <table className="tg">
-                        <tr>
-                            <th><input className="tg-tlxv" type="text" name="firstname" value="COMPANY"/></th>
-                            <th><input className="tg-hayz" type="text" name="firstname" value="POSITION"/></th>
-                            <th><input className="tg-hayz" type="text" name="firstname" value="LINK"/></th>
-                            <th><input className="tg-hayz" type="text" name="firstname" value="STATUS"/></th>
-                            <th><input className="tg-hayz" type="text" name="firstname" value="DATE APPLIED"/></th>
-                            <th><input className="tg-hayz" type="text" name="firstname" value="DATE CONTACTED"/></th>
-                        </tr>
-                    </table>
-                </span>
-                <span className={"item"}>
-                    <button type="button" className={"button-app"}>Add Row</button>
+                    <form action="/action_page.php">
+                        <fieldset>
+                        <legend className={"legend-val"}>Personal information:</legend>
+                        Company:<br/>
+                        <input className={"input"} type="text" name="firstname"/>
+                        <br/>
+                        Job Title:<br/>
+                        <input className={"input"} type="text" name="lastname"/>
+                        <br/>
+                        Link:<br/>
+                        <input className={"input"} type="text" name="lastname"/>
+                        <br/>
+                        Date Applied:<br/>
+                        <input className={"input"} type="text" name="lastname"/>
+                        <br/>
+                        <br/><br/>
+                        <input className={"input"} type="submit" value="Submit" />
+                        </fieldset>
+                    </form>
                 </span>
             </div>
 
