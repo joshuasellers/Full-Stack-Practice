@@ -3,14 +3,16 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
+    "aws-sdk": "^2.538.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-router-dom": "^5.0.1",
     "reactstrap": "^6.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "aws s3 cp ./build s3://jobappbucket/ --recursive",
+    "start": "react-scripts start",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
