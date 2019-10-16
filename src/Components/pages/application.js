@@ -27,16 +27,16 @@ class Application extends Component {
                         <fieldset>
                         <legend className={"legend-val"}>Personal information:</legend>
                         Company:<br/>
-                        <input className={"input"} type="text" name="firstname"/>
+                        <input className={"input"} type="text" name="company"/>
                         <br/>
                         Job Title:<br/>
-                        <input className={"input"} type="text" name="lastname"/>
+                        <input className={"input"} type="text" name="job"/>
                         <br/>
                         Link:<br/>
-                        <input className={"input"} type="text" name="lastname"/>
+                        <input className={"input"} type="text" name="link"/>
                         <br/>
                         Date Applied:<br/>
-                        <input className={"input"} type="text" name="lastname"/>
+                        <input className={"input"} type="text" name="date"/>
                         <br/>
                         <br/><br/>
                         <input className={"input"} type="submit" value="Submit" />
