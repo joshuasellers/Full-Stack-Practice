@@ -11,10 +11,11 @@ class Application extends Component {
         event.preventDefault();
         const data = new FormData(event.target);
 
-        const response = fetch('/api/form-submit-url', {
-            method: 'POST',
-            body: data,
-        });
+        console.log(data);
+        //const response = fetch('/api/form-submit-url', {
+        //    method: 'POST',
+        //    body: data,
+        //});
     }
 
     render() {
