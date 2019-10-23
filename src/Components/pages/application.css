@@ -16,10 +16,6 @@
     font-size: 12pt;
 }
 
-.input {
-    color:black;
-}
-
 .legend-val {
     color:#7fddff;
 }
@@ -28,3 +24,23 @@
     padding: 100px;
 }
 
+.lab {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: right;
+    width: 400px;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+
+.inp {
+    height: 20px;
+    flex: 0 0 200px;
+    margin-left: 10px;
+    color:black;
+}
+
+.sub {
+    color: black;
+}
