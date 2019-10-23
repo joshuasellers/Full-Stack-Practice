@@ -8,7 +8,7 @@ class Application extends Component {
             companyName: "",
             jobTitle: "",
             jobLink: "",
-            dateApplied: "",
+            dateApplied: ""
         };
 
         this.handleInputChange = this.handleInputChange.bind(this);
@@ -26,11 +26,15 @@ class Application extends Component {
         });
     }
 
-    handleSubmit() {
-        //event.preventDefault();
-        //const data = new FormData(event.target);
-
-        //console.log(data);
+    handleSubmit(event) {
+        event.preventDefault();
+        const data = '{ "jobEntry" : {' +
+            ' "companyName": "'+ this.state.companyName + '" , ' +
+            ' "jobTitle": "'+ this.state.jobTitle + '" , ' +
+            ' "jobLink": "'+ this.state.jobLink + '" , ' +
+            ' "dateApplied": "'+ this.state.dateApplied +'" }}';
+        const out = JSON.parse(data);
+        console.log(out);
         //const response = fetch('/api/form-submit-url', {
         //    method: 'POST',
         //    body: data,
@@ -43,14 +47,14 @@ class Application extends Component {
                 <h2>New Job Application</h2>
                 <p>Add in the information related to your most recent job application</p>
                 <span className={"item"}>
-                    <form onSubmit={this.handleSubmit}>
+                    <form>
                         <legend className={"legend-val"}>Personal information:</legend>
                         <label className={"lab"}>
                             Company:
                             <input
                                 className={"inp"}
                                 type="text"
-                                name="company"
+                                name="companyName"
                                 value={this.state.companyName}
                                 onChange={this.handleInputChange}
                             />
@@ -61,7 +65,7 @@ class Application extends Component {
                             <input
                                 className={"inp"}
                                 type="text"
-                                name="job"
+                                name="jobTitle"
                                 value={this.state.jobTitle}
                                 onChange={this.handleInputChange}
                             />
@@ -72,7 +76,7 @@ class Application extends Component {
                             <input
                                 className={"inp"}
                                 type="text"
-                                name="link"
+                                name="jobLink"
                                 value={this.state.jobLink}
                                 onChange={this.handleInputChange}
                             />
@@ -83,19 +87,17 @@ class Application extends Component {
                             <input
                                 className={"inp"}
                                 type="text"
-                                name="date"
+                                name="dateApplied"
                                 value={this.state.dateApplied}
                                 onChange={this.handleInputChange}
                             />
                         </label>
                         <br/>
                         <br/><br/>
-                        <input
-                            className={"sub"}
-                            type="submit"
-                            value="Submit"
-                        />
                     </form>
+                    <button className={"sub"} onClick={this.handleSubmit}>
+                        SUBMIT
+                    </button>
                 </span>
             </div>
 
