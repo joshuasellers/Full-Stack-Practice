@@ -41,7 +41,7 @@ class Application extends Component {
 
         try {
             const response = await fetch('http://jobappbucket.s3-website-us-west-2.amazonaws.com/', {
-                method: 'PUT',
+                method: 'POST',
                 body: form_data
             });
             const result = await response.json();
