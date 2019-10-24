@@ -26,19 +26,29 @@ class Application extends Component {
         });
     }
 
-    handleSubmit(event) {
+    async handleSubmit(event) {
         event.preventDefault();
-        const data = '{ "jobEntry" : {' +
-            ' "companyName": "'+ this.state.companyName + '" , ' +
-            ' "jobTitle": "'+ this.state.jobTitle + '" , ' +
-            ' "jobLink": "'+ this.state.jobLink + '" , ' +
-            ' "dateApplied": "'+ this.state.dateApplied +'" }}';
-        const out = JSON.parse(data);
-        console.log(out);
-        //const response = fetch('/api/form-submit-url', {
-        //    method: 'POST',
-        //    body: data,
-        //});
+        const data = {
+            "companyName": this.state.companyName,
+            "jobTitle": this.state.jobTitle,
+            "jobLink": this.state.jobLink,
+            "dateApplied": this.state.dateApplied
+        };
+        let form_data = new FormData();
+        for (const key in data) {
+            form_data.append(key, data[key]);
+        }
+
+        try {
+            const response = await fetch('http://jobappbucket.s3-website-us-west-2.amazonaws.com/', {
+                method: 'PUT',
+                body: form_data
+            });
+            const result = await response.json();
+            console.log('Success:', JSON.stringify(result));
+        } catch (error) {
+            console.error('Error:', error);
+        }
     }
 
     render() {
