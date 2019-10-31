@@ -66,9 +66,37 @@ class Application extends Component {
         // Configure aws with your accessKeyId and your secretAccessKey
         const things = getSecretStuff();
         aws.config.update({
-            region: 'us-east-1', // Put your aws region here
+            region: 'us-east-2', // Put your aws region here
             accessKeyId: things.keyId,
             secretAccessKey: things.secretKey
+        });
+
+        const s3 = new aws.S3();
+
+        const params = {
+            Bucket: 'jobappdata',
+            Key: this.state.jobLink,
+            Expires: 60,
+        };
+
+        s3.getSignedUrl('putObject', params, function(err, signedUrl) {
+            if (err) {
+                console.log(err);
+                return err;
+            } else {
+                console.log(signedUrl);
+
+                const instance = axios.create();
+
+                instance.put(signedUrl, entry)
+                    .then(function (result) {
+                        console.log(result);
+                    })
+                    .catch(function (err) {
+                        console.log(err);
+                    });
+                return signedUrl;
+            }
         });
 
     }
